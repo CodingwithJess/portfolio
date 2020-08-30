@@ -1,6 +1,5 @@
 import React from "react";
-import Thumbnail from './Thumbnail.js'; // Import the Thumbnail component
-import './App.css';
+import Thumbnail from "./Thumbnail.js"; // Import the Thumbnail component
 
 function Projects(props) {
   return (
@@ -8,9 +7,24 @@ function Projects(props) {
       <h1>Projects</h1>
       <Thumbnail
         link=""
+        gHubLink=""
         image=""
-        title=""
-        category=""
+        title="This will be a project"
+        description=""
+      />
+      <Thumbnail
+        link=""
+        gHubLink=""
+        image=""
+        title="This will be a project"
+        description=""
+      />
+      <Thumbnail
+        link=""
+        gHubLink=""
+        image=""
+        title="This will be a project"
+        description=""
       />
     </div>
   );

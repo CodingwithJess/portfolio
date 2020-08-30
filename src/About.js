@@ -1,10 +1,12 @@
 import React from "react";
-import './App.css';
+
 
 function About(props) {
   return (
     <div>
       <h1>About Me</h1>
+      <p>This will be an image</p>
+      <h2>This will be a card</h2>
     </div>
   );
 }

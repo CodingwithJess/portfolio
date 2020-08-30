@@ -1,19 +1,22 @@
-import React from "react"; // Import the Component component from React
-import { Link } from "react-router-dom"; // Import the Link component
-import "./App.css";
+// import { Link } from "react-router-dom"; // Import the Link component
+import React from 'react';
+import {Card, CardImg, CardText, CardBody,CardTitle,Button} from 'reactstrap';
 
-function Thumbnail(props) {
+const Thumbnail = ({link, title, description, image, gHubLink}) => {
   return (
-    <div className="project">
-      <Link to={props.link}>
-        <div className="project-image">
-          <img src={props.image} alt="Unique Project Alt" />
-        </div>
-        <div className="project-title">{props.title}</div>
-        <div className="project-category">{props.category}</div>
-      </Link>
+    <div>
+      <Card className="project">
+        <CardImg top width="100%" src={image} alt="Card image cap" />
+        <CardBody>
+          <CardTitle>{title}</CardTitle>
+          <CardText>{description}</CardText>
+          <Button href={link}>See Deployed Project</Button>
+          <br/>
+          <Button href={gHubLink}>GitHub Repo</Button>
+        </CardBody>
+      </Card>
     </div>
   );
-}
+};
 
 export default Thumbnail;

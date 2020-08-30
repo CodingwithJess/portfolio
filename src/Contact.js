@@ -1,11 +1,27 @@
-import React from "react";
-import './App.css';
+import React from 'react';
+import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
-function Contact (props) {
+const Contact = (props) => {
   return (
-    <div>
-      <h1>Contact</h1>
-    </div>
+    <Form>
+      <FormGroup>
+        <Label for="exampleEmail">Name</Label>
+        <Input type="text" name="email" id="exampleEmail" placeholder="Harry Potter" />
+      </FormGroup>
+      <FormGroup>
+        <Label for="exampleEmail">Phone Number</Label>
+        <Input type="text" name="email" id="exampleEmail" placeholder="123-456-7890" />
+      </FormGroup>
+      <FormGroup>
+        <Label for="exampleEmail">Email</Label>
+        <Input type="email" name="email" id="exampleEmail" placeholder="hpotter@hogwarts.edu" />
+      </FormGroup>
+      <FormGroup>
+        <Label for="exampleText">Text Area</Label>
+        <Input type="textarea" name="text" id="exampleText" />
+      </FormGroup>
+      <Button>Submit</Button>
+    </Form>
   );
 }
 
