@@ -1,18 +1,20 @@
 import React from "react";
 import {Container} from "reactstrap"
 // using router-react to link to each page
-import {BrowserRouter, Route, Link} from "react-router-dom";
+import {BrowserRouter, Route} from "react-router-dom";
 import { Nav, NavLink } from 'reactstrap';
 // importing each component to the app
 import Projects from "./Projects";
 import Contact from "./Contact";
 import About from "./About";
+import Jumbotron from "./Jumbotron";
 
 function App() {
   return (
     <BrowserRouter>
+    <Jumbotron/>
       <Container>
-        <div>
+        <div className="navlinks">
           <Nav>
             <NavLink href="/">About</NavLink> 
             <NavLink href="/projects">Projects</NavLink> 
